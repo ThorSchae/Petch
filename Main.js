@@ -5,7 +5,7 @@ function setup() {
 }
 
 function draw() {
-
+    background(0);
     strokeWeight(4);
     stroke(255);
     for(var x = 0; x <= mouseX; x +=50){  

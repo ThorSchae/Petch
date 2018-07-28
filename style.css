@@ -3,25 +3,32 @@ background-image:
     url(file:///C:/Privat/Petch/Petch/Bilder/Hund1.jpg);
     background-size: contain;
     background-repeat: no-repeat;
+    min-width: 400px;
+    min-height: 600px;
+    display: -ms-grid;
+
 }
 #Seitenbereich {
-    width: auto;
+    min-width: 600px;
+    min-height: 400px;
 
 }
 
-#eingabeVname{
+#eingabeEinloggen{
 display: table;
-align-self: center;
+padding: 2px;
+margin-right: auto;
+margin-left: auto;
+padding-top: 10px;
+
 }
 
 p{
     display: table-row;
-    align-items: center;
 }
 
 input {   
-    display:table-cell;
-    
+    display:table-cell;    
 }
 label {
     display: table-cell;

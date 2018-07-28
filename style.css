@@ -1,18 +1,12 @@
-ul {
-color: black;
-background-color: white;
-
+body{
+background-image: 
+    url(file:///C:/Privat/Petch/Petch/Bilder/Hund1.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
 }
-
 #Seitenbereich {
     width: auto;
-    background-color: red;
-}
-#Bereich {   
-    /*justify-content: center;*/
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 100em;
+
 }
 
 #eingabeVname{

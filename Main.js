@@ -1,3 +1,4 @@
+/*
 var circleX = 0;
 var offset = 0;
 var coloroffset = 0;
@@ -25,7 +26,19 @@ onmousemove = function colorText(){
     
     coloroffset = ((1<<24)*Math.random()|0).toString(16);
     document.getElementById("option1").innerHTML = coloroffset
-}
+} */
+var username
+var mypasswort
+document.getElementById("button1").addEventListener("click", myclick);
+
+function myclick() {
+document.getElementById("button1").innerHTML = "hello";
+var username = document.getElementById("username").value;
+var mypasswort = document.getElementById("passwort").value;
+//dbo.userAdd;
+console.log(username);
+console.log(mypasswort);
+};
   /*
 function mongoInit () {
 var MongoClient = require ('mongodb').MongoClient;

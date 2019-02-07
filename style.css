@@ -1,6 +1,6 @@
 body{
 background-image: 
-    url(file:///C:/Privat/Petch/Petch/Bilder/Hund1.jpg);
+   /*url(file:///C:/Privat/Petch/Petch/Bilder/Hund1.jpg); */
     background-size: contain;
     background-repeat: no-repeat;
     min-width: 400px;

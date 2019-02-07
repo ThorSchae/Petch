@@ -35,26 +35,41 @@ dbo.petInsert = dbo.collection("pets").insertOne(myobj, function(err, res) {
   }) */
 // pet hinzufügen multi
 
-
-// pet löschen nach  kategorie
-var myquery = {art: "katze"};
-dbo.petDelete = dbo.collection("pets").deleteMany(myquery, function(err, obj){
-if (err) throw err;
-console.log(obj.result.n +"deleted" );
-})
-
-//dbo.petInsert;
-dbo.petDelete;
-
-db.close();
-});
-
 /*
 dbo.collection("pets").insertMany(myobj2, function(err, res){
 if (err) throw err;
 console.log(res.insertedCount + "eingefügt");
 db.close();
 }) */
+
+
+
+// pet löschen nach  kategorie
+var myquery = {art: "katze"};
+dbo.petDelete = dbo.collection("pets").deleteMany(myquery, function(err, obj){
+if (err) throw err;
+console.log(obj.result.n +" deleted" );
+})
+
+// user anlegen
+var username = "test"
+dbo.userAdd = function() {
+var myobj3 = {name: username , passwort: "mypasswort"};
+dbo.collection("users").insertOne(myobj3,   function(err, res) {
+if (err) throw err;
+console.log("1 document inserted");
+})}();
+
+
+//dbo.petInsert;
+dbo.petDelete;
+dbo.userAdd
+db.close();
+});
+
+
+
+
 
 
 

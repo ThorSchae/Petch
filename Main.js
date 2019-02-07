@@ -26,7 +26,13 @@ onmousemove = function colorText(){
     coloroffset = ((1<<24)*Math.random()|0).toString(16);
     document.getElementById("option1").innerHTML = coloroffset
 }
-
+  /*
 function mongoInit () {
+var MongoClient = require ('mongodb').MongoClient;
+var url = "mongodb://localhost:27017/mydb";
+var dbo = db.db("mydb");
 
-}
+dbo.petDelete;
+
+
+} */

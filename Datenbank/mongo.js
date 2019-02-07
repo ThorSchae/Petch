@@ -40,7 +40,7 @@ dbo.petInsert = dbo.collection("pets").insertOne(myobj, function(err, res) {
 var myquery = {art: "katze"};
 dbo.petDelete = dbo.collection("pets").deleteMany(myquery, function(err, obj){
 if (err) throw err;
-console.log(obj.result.n );
+console.log(obj.result.n +"deleted" );
 })
 
 //dbo.petInsert;

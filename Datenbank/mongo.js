@@ -6,7 +6,7 @@ MongoClient.connect(url, function(err, db) {
 if (err) throw err;
 var dbo = db.db("mydb");
 var myobj = {name: "name2", art: "katze", alter: 7 , adresse: "musterhausen"};
-var myobjUser = {name: "Richter" , passwort:: "Hans"};
+var myobjUser = {name: "Richter" , passwort: "Hans"};
 var myobj2 = [
 {name: "hans", art: "hund", alter: 2 , adresse: "münchen"},
 {name: "franz", art: "hund", alter: 4, adresse: "berlin"},
